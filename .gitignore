@@ -1,0 +1,32 @@
+# IntelliJ IDEA
+.idea/
+
+# Maven
+target/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Compiled Java files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Temporary files
+*.tmp
+*.swp
