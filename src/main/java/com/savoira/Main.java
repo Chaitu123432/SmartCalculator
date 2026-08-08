@@ -1,7 +1,5 @@
 package com.savoira;
 import java.util.Scanner;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 public class Main {
     public static void main(String[] args) {
         
@@ -13,21 +11,21 @@ public class Main {
             System.out.print("Enter first number (or 'exit'): ");
             String input = sc.nextLine().trim();
             if (input.equalsIgnoreCase("exit")) break;
-            double a = Double.parseDouble(input);
+            double x = Double.parseDouble(input);
             System.out.print("Enter operator (+ - * / %): ");
             String op = sc.nextLine().trim();
             System.out.print("Enter second number: ");
-            double b = Double.parseDouble(sc.nextLine().trim());
+            double y = Double.parseDouble(sc.nextLine().trim());
             double result = switch (op) {
-                case "+" -> a + b;
-                case "-" -> a - b;
-                case "*" -> a * b;
+                case "+" -> x + y;
+                case "-" -> x - y;
+                case "*" -> x * y;
                 case "/" -> {
-                    if (b == 0) { System.out.println("Error: division by zero"); yield
+                    if (y == 0) { System.out.println("Error: division by zero"); yield
                             Double.NaN; }
-                    else yield a / b;
+                    else yield x / y;
                 }
-                case "%" -> a % b;
+                case "%" -> x % y;
                 default -> { System.out.println("Unknown operator"); yield
                         Double.NaN; }
             };
