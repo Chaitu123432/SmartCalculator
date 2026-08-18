@@ -10,34 +10,50 @@ public class Demo {
 
     public static void main(String[] args) {
 
-        logger.info("=== Bank Account Demo Started ===");
+        var account1 =
+                new BankAccount("ACC1001", "Naga", 100_000.0);
 
-        BankAccount account1 =
-                new BankAccount("1001", "Naga", 10000.00);
+        var account2 =
+                new BankAccount("ACC1002", "Chaitanya", 50_000.0);
 
-        BankAccount account2 =
-                new BankAccount("1002", "Chaitanya", 5000.00);
+        logger.info("Initial account 1: {}", account1);
+        logger.info("Initial account 2: {}", account2);
 
-        logger.info("--- Performing operations on Account 1 ---");
+        account1.deposit(25_000.0);
+        account1.withdraw(10_000.0);
 
-        account1.deposit(2000.00);
-        account1.withdraw(1500.00);
-
-        // Invalid operation
-        account1.withdraw(20000.00);
-
-        logger.info("--- Performing operations on Account 2 ---");
-
-        account2.deposit(1000.00);
-        account2.withdraw(500.00);
+        account2.deposit(40_000.0);
+        account2.withdraw(15_000.0);
 
         // Invalid operation
-        account2.deposit(-500.00);
+        try {
+            account1.withdraw(500_000.0);
+        } catch (IllegalArgumentException exception) {
+            logger.warn("Invalid operation: {}", exception.getMessage());
+        }
 
-        logger.info("--- Final Account Details ---");
-        logger.info("{}", account1);
-        logger.info("{}", account2);
+        // Static tracking
+        logger.info(
+                "Total accounts created: {}",
+                BankAccount.getAccountCount()
+        );
 
-        logger.info("=== Bank Account Demo Completed ===");
+        logger.info(
+                "Total transactions performed: {}",
+                BankAccount.getTotalTransactionCount()
+        );
+
+        // LoanUtils demonstration
+        var loanAmount =
+                LoanUtils.calculateLoanAmount(
+                        100_000.0,
+                        8.0,
+                        24
+                );
+
+        logger.info("Calculated loan amount: {}", loanAmount);
+
+        logger.info("Final account 1: {}", account1);
+        logger.info("Final account 2: {}", account2);
     }
 }
