@@ -1,4 +1,4 @@
-package com.savoira.week5;
+package com.savoira.w5;
 
 public class HomeLoan extends Loan {
 

@@ -1,6 +1,6 @@
-package com.savoira.week5;
+package com.savoira.w5;
 
-public class PersonalLoan extends Loan {
+public class PersonalLoan extends Loan implements Exportable {
 
     private final int tenureMonths;
 
@@ -22,5 +22,18 @@ public class PersonalLoan extends Loan {
     @Override
     public String loanType() {
         return "Personal Loan";
+    }
+
+    @Override
+    public String toCSVRow() {
+        return String.format(
+                "%s,%s,%.2f,%.2f,%d,%.2f",
+                loanId,
+                applicantName,
+                principal,
+                annualRate,
+                tenureMonths,
+                calculateEMI()
+        );
     }
 }

@@ -1,11 +1,14 @@
-package com.savoira.week5;
+package com.savoira.w5;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public abstract class Loan {
+import java.util.Objects;
 
-    private static final Logger logger = LoggerFactory.getLogger(Loan.class);
+public abstract class Loan implements Auditable {
+
+    private static final Logger logger =
+            LoggerFactory.getLogger(Loan.class);
 
     protected String loanId;
     protected String applicantName;
@@ -24,6 +27,17 @@ public abstract class Loan {
 
     public abstract String loanType();
 
+    @Override
+    public String auditSummary() {
+        return auditPrefix()
+                + loanId + " | "
+                + applicantName + " | Rs."
+                + String.format("%.2f", principal)
+                + " | Rate:"
+                + String.format("%.2f", annualRate)
+                + "%";
+    }
+
     public void printSummary() {
         logger.info(
                 "Loan ID: {}, Applicant: {}, Loan Type: {}, Principal: {}, Annual Rate: {}%, EMI: {}",
@@ -33,6 +47,30 @@ public abstract class Loan {
                 String.format("%.2f", principal),
                 String.format("%.2f", annualRate),
                 String.format("%.2f", calculateEMI())
+        );
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+
+        if (!(obj instanceof Loan other)) {
+            return false;
+        }
+
+        if (loanId == null || other.loanId == null) {
+            return loanId == other.loanId;
+        }
+
+        return loanId.equalsIgnoreCase(other.loanId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(
+                loanId == null ? null : loanId.toLowerCase()
         );
     }
 }
