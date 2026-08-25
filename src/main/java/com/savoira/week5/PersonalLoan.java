@@ -1,4 +1,4 @@
-package com.savoira.w5;
+package com.savoira.week5;
 
 public class PersonalLoan extends Loan implements Exportable {
 

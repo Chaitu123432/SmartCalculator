@@ -1,4 +1,4 @@
-package com.savoira.w5;
+package com.savoira.week5;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
