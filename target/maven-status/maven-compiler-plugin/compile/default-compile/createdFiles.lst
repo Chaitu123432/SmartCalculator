@@ -1,0 +1,17 @@
+com\savoira\DivisionByZeroException.class
+com\savoira\w6\PaymentException.class
+com\savoira\InvalidOperationException.class
+com\savoira\Calculable.class
+com\savoira\Percentage.class
+com\savoira\Subtraction.class
+com\savoira\w6\InsufficientFundsException.class
+com\savoira\w6\PaymentService.class
+com\savoira\Division.class
+com\savoira\Multiplication.class
+com\savoira\Main.class
+com\savoira\Operation.class
+com\savoira\w6\DailyLimitExceededException.class
+com\savoira\Modulo.class
+com\savoira\Addition.class
+com\savoira\SquareRoot.class
+com\savoira\w6\InvalidAmountException.class

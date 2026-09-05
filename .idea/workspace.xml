@@ -5,21 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2956bef5-0bd3-4962-b764-4f6dc89fcdcc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/Addition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/Calculable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/Division.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/DivisionByZeroException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/InvalidOperationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/Modulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/Multiplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/Percentage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/SquareRoot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/Subtraction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/savoira/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SmartCalculator-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/Auditable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/CreditScoreBelowThresholdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/EducationalLoan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/Exportable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/HomeLoan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/InsufficientIncomeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/InvalidLoanAmountException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/Loan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/LoanApplicationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/LoanCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/LoanDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/LoanException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/LoanPortfolio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/PersonalLoan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/PrecisionDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/docs/exception-review.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,24 +52,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nanne/OneDrive/Desktop/SmartCalculator/SmartCalculator&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.PaymentService.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "w6-threads",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/nanne/OneDrive/Desktop/SmartCalculator/SmartCalculator",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Application.PaymentService">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.savoira.Main" />
       <module name="SmartCalculator" />
@@ -79,8 +84,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaymentService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.savoira.w6.PaymentService" />
+      <module name="SmartCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.savoira.w6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PaymentService" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>

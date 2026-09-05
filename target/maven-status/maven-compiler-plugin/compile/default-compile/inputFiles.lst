@@ -10,3 +10,8 @@ C:\Users\nanne\OneDrive\Desktop\SmartCalculator\SmartCalculator\src\main\java\co
 C:\Users\nanne\OneDrive\Desktop\SmartCalculator\SmartCalculator\src\main\java\com\savoira\Percentage.java
 C:\Users\nanne\OneDrive\Desktop\SmartCalculator\SmartCalculator\src\main\java\com\savoira\SquareRoot.java
 C:\Users\nanne\OneDrive\Desktop\SmartCalculator\SmartCalculator\src\main\java\com\savoira\Subtraction.java
+C:\Users\nanne\OneDrive\Desktop\SmartCalculator\SmartCalculator\src\main\java\com\savoira\w6\DailyLimitExceededException.java
+C:\Users\nanne\OneDrive\Desktop\SmartCalculator\SmartCalculator\src\main\java\com\savoira\w6\InsufficientFundsException.java
+C:\Users\nanne\OneDrive\Desktop\SmartCalculator\SmartCalculator\src\main\java\com\savoira\w6\InvalidAmountException.java
+C:\Users\nanne\OneDrive\Desktop\SmartCalculator\SmartCalculator\src\main\java\com\savoira\w6\PaymentException.java
+C:\Users\nanne\OneDrive\Desktop\SmartCalculator\SmartCalculator\src\main\java\com\savoira\w6\PaymentService.java
