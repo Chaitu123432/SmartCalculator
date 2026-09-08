@@ -5,8 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2956bef5-0bd3-4962-b764-4f6dc89fcdcc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/week7/w7-logic.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/week7/ATMSimulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/week7/BugFixer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/week7/ComplexityNotes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/savoira/week7/Successful Transaction.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/Auditable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/CreditScoreBelowThresholdException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/EducationalLoan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/Exportable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/HomeLoan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/InsufficientIncomeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/InvalidLoanAmountException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/Loan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/LoanApplicationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/LoanCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/LoanDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/LoanException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/LoanPortfolio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/PersonalLoan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/PrecisionDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/docs/exception-review.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/savoira/assessment/exception-review.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +41,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="w7-logic" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -35,30 +60,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PaymentService.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;assessment3&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nanne/OneDrive/Desktop/SmartCalculator/SmartCalculator/src/main/java/com/savoira/week7&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ATMSimulator.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.PaymentService.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "w7-logics",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/nanne/OneDrive/Desktop/SmartCalculator/SmartCalculator/src/main/java/com/savoira/week7",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nanne\OneDrive\Desktop\SmartCalculator\SmartCalculator\src\main\java\com\savoira\week7" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nanne\OneDrive\Desktop\SmartCalculator\SmartCalculator\src\main\java\com\savoira\week7" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.PaymentService">
+  <component name="RunManager" selected="Application.ATMSimulator">
+    <configuration name="ATMSimulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.savoira.week7.ATMSimulator" />
+      <module name="SmartCalculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.savoira.week7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.savoira.Main" />
       <module name="SmartCalculator" />
@@ -87,6 +129,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ATMSimulator" />
         <item itemvalue="Application.PaymentService" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.PaymentService" />
