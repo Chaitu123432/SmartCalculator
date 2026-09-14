@@ -1,12 +1,14 @@
 com\savoira\DivisionByZeroException.class
-com\savoira\Division.class
-com\savoira\Multiplication.class
 com\savoira\InvalidOperationException.class
 com\savoira\Calculable.class
 com\savoira\Percentage.class
+com\savoira\Subtraction.class
+com\savoira\Division.class
+com\savoira\Multiplication.class
+com\savoira\PolymorphismDemo.class
+com\savoira\Calculator.class
 com\savoira\Main.class
 com\savoira\Operation.class
-com\savoira\Subtraction.class
 com\savoira\Modulo.class
 com\savoira\Addition.class
 com\savoira\SquareRoot.class
