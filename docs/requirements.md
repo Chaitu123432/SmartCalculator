@@ -18,3 +18,22 @@
 
 1. The feature will not approve loans automatically.
 2. The feature will not perform credit score calculations internally.
+
+## Planned Architecture
+
+```text
+Main
+  |
+  +--> Calculator
+  |      |
+  |      +--> operator validation
+  |      +--> percentage utility
+  |      +--> square-root utility
+  |
+  +--> Calculable
+          |
+          +--> Addition
+          +--> Subtraction
+          +--> Multiplication
+          +--> Division
+```

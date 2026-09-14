@@ -1,33 +1,20 @@
-# 5 Whys
+## 5 Whys
 
-## Problem
+**Why does a user need a calculator app?**  
+To perform arithmetic calculations quickly.
 
-Customers abandon the loan form on step 2.
+**Why does the user need quick calculations?**  
+To avoid performing repetitive calculations manually.
 
-### Why 1?
+**Why avoid manual calculations?**  
+Manual calculations can take longer and can introduce arithmetic errors.
 
-Because they stop entering financial information.
+**Why reduce arithmetic errors?**  
+Accurate results make the calculator more useful and reliable.
 
-### Why 2?
+**Why is reliability important?**  
+Users should be able to perform common calculations with predictable results and clear error handling.
 
-Because they do not understand what values are required.
+### Insight
 
-### Why 3?
-
-Because the form labels and instructions are unclear.
-
-### Why 4?
-
-Because user guidance was not included during design.
-
-### Why 5?
-
-Because user testing was not conducted before release.
-
-## Root Cause
-
-Insufficient usability testing and unclear form instructions.
-
-## Actionable Fix
-
-Improve field labels, provide examples, and validate the form with usability testing before release.
+The calculator should prioritize simple arithmetic, reliable results, clear error messages, and a straightforward CLI.
