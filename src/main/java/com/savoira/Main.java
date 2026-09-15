@@ -34,7 +34,7 @@ public class Main {
                             + "+, -, *, /, %, sqrt, percentage"
             );
 
-            PolymorphismDemo.run();
+            // PolymorphismDemo.run();
 
             while (true) {
 
@@ -97,31 +97,24 @@ public class Main {
                             String.format("%.2f", result)
                     );
 
-                } catch (InvalidOperationException exception) {
-
-                    logger.error(
-                            "Invalid operation: {}",
-                            exception.getMessage()
-                    );
-
                 } catch (DivisionByZeroException exception) {
 
                     logger.error(
-                            "Calculation error: {}",
+                            "Calculation error : {}",
                             exception.getMessage()
                     );
 
                 } catch (ArithmeticException exception) {
 
                     logger.error(
-                            "Calculation error: {}",
+                            "Calculation error:  {}",
                             exception.getMessage()
                     );
 
                 } catch (IllegalArgumentException exception) {
 
                     logger.error(
-                            "Calculation error: {}",
+                            "Calculation  error: {}",
                             exception.getMessage()
                     );
                 }
