@@ -25,9 +25,7 @@ public class Modulo extends Operation implements Calculable {
     public double calculate() {
 
         if (secondOperand == 0) {
-            throw new ArithmeticException(
-                    "Cannot perform modulo by zero."
-            );
+            throw new ModuloByZeroException();
         }
 
         return firstOperand % secondOperand;

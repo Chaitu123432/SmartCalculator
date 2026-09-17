@@ -34,8 +34,6 @@ public class Main {
                             + "+, -, *, /, %, sqrt, percentage"
             );
 
-            // PolymorphismDemo.run();
-
             while (true) {
 
                 logger.info("Enter first number (or 'exit'): ");
@@ -57,17 +55,19 @@ public class Main {
                 );
 
                 String operator = scanner.nextLine().trim();
-
+                try {
                 if (!calculator.isValidOperator(operator)) {
 
-                    logger.error(
-                            "Invalid operation: Unsupported operator: {}",
-                            operator
+                    throw new InvalidOperationException(
+                            "Unsupported operator: " + operator
                     );
-
-                    continue;
                 }
-
+                } catch (InvalidOperationException exception){
+                    logger.error(
+                            "Error : {}",
+                            exception.getMessage()
+                    );
+                }
                 Double secondOperand = null;
 
                 if (calculator.requiresSecondOperand(operator)) {
@@ -97,24 +97,10 @@ public class Main {
                             String.format("%.2f", result)
                     );
 
-                } catch (DivisionByZeroException exception) {
+                } catch (IllegalArgumentException | DivisionByZeroException | ModuloByZeroException exception) {
 
                     logger.error(
                             "Calculation error : {}",
-                            exception.getMessage()
-                    );
-
-                } catch (ArithmeticException exception) {
-
-                    logger.error(
-                            "Calculation error:  {}",
-                            exception.getMessage()
-                    );
-
-                } catch (IllegalArgumentException exception) {
-
-                    logger.error(
-                            "Calculation  error: {}",
                             exception.getMessage()
                     );
                 }

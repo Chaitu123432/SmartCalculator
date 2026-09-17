@@ -1,4 +1,5 @@
 com\savoira\DivisionByZeroException.class
+com\savoira\ModuloByZeroException.class
 com\savoira\InvalidOperationException.class
 com\savoira\Calculable.class
 com\savoira\Percentage.class

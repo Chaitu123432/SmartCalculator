@@ -20,7 +20,7 @@ public class Calculator {
 
         return switch (operator.toLowerCase()) {
             case "+", "-", "*", "/", "%",
-                 "sqrt", "square-root", "percentage" -> true;
+                 "sqrt", "percentage" -> true;
             default -> false;
         };
     }
@@ -33,8 +33,7 @@ public class Calculator {
      */
     public boolean requiresSecondOperand(String operator) {
 
-        return !operator.equalsIgnoreCase("sqrt")
-                && !operator.equalsIgnoreCase("square-root");
+        return !operator.equalsIgnoreCase("sqrt");
     }
 
     /**
@@ -51,13 +50,6 @@ public class Calculator {
             String operator,
             Double secondOperand
     ) {
-
-        if (!isValidOperator(operator)) {
-            throw new InvalidOperationException(
-                    "Unsupported operator: " + operator
-            );
-        }
-
         Calculable operation = createOperation(
                 firstOperand,
                 operator,
@@ -110,7 +102,7 @@ public class Calculator {
                     requireSecondOperand(secondOperand, operator)
             );
 
-            case "sqrt", "square-root" ->
+            case "sqrt" ->
                     new SquareRoot(firstOperand);
 
             case "percentage" -> new Percentage(
