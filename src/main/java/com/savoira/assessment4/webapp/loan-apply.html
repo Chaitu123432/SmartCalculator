@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application - Meridian Retail Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Meridian Retail Bank</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="#accounts">Accounts</a></li>
+            <li><a href="#transfers">Transfers</a></li>
+            <li><a href="loan-apply.html">Loans</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="form-container">
+    <h2>Apply for a Loan</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" minlength="3" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="10-digit mobile number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="loantype">Loan Type:</label>
+            <select id="loantype" name="loantype" required>
+                <option value="">-- Select Loan Type --</option>
+                <option value="Home Loan">Home Loan</option>
+                <option value="Personal Loan">Personal Loan</option>
+                <option value="Education Loan">Education Loan</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="loanamount">Loan Amount (₹):</label>
+            <input type="number" id="loanamount" name="loanamount" min="50000" max="5000000" step="1000" required>
+        </div>
+
+        <div class="form-group">
+            <label for="income">Annual Income (₹):</label>
+            <input type="number" id="income" name="income" min="100000" required>
+        </div>
+
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="declaration" name="declaration" required>
+            <label for="declaration">I confirm the information provided is accurate</label>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Submit Loan Application</button>
+        </div>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 Meridian Retail Bank | Savoira Learning Platform</p>
+    <p><a href="#">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
